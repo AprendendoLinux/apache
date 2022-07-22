@@ -16,4 +16,4 @@ docker run -d --name='apache' \
 --restart=always aprendendolinux/apache:latest
 ~~~
 
-Use também o [docker-compose.yml](https://github.com/AprendendoLinux/apache/blob/main/docker-compose.yml).
+Use também o [docker-compose.yml](https://github.com/AprendendoLinux/apache/blob/master/docker-compose.yml).
