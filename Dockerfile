@@ -3,6 +3,8 @@ FROM debian
 RUN apt-get update && \
     apt-get install -y apache2 && \
     apt-get clean all && \
+    rm -r /var/cache/apt/archives/* && \
+    rm -r /var/lib/apt/lists/* && \
     ln -sf /dev/stdout /var/log/apache2/access.log && \
     ln -sf /dev/stderr /var/log/apache2/error.log && \
     sed -i "s/#AddDefaultCharset/AddDefaultCharset/g" /etc/apache2/conf-enabled/charset.conf && \
